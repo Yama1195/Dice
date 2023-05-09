@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>初めてのサイコロ</title>
+  <script>
+    function roll() {
+      return (Math.floor(Math.random() * 6)) + 1;
+    }
+    function result() {
+      let trials = document.getElementById("trials");
+      trials.innerHTML = roll();
+    }
+  </script>
+</head>
+<body>
+  <p>サイコロ</p>
+  <p><input type="button" value="ROLL" onclick="result()" /></p>
+  <div id="trials"></div>
+</body>
+</html>
